@@ -1,0 +1,23 @@
+{
+  "name": "Duplicate tab remover",
+  "version": "1.0",
+  "description": "Removes duplicate tabs",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "remove-tabs": {
+      "suggested_key": { "default": "Alt+Shift+R" },
+      "description": "Remove duplicate tabs"
+    },
+    "sort-tabs": {
+        "suggested_key": {"default": "Alt+Shift+S"},
+        "description": "Sort Tabs by URL"
+    }
+  },
+  "manifest_version": 2
+}
